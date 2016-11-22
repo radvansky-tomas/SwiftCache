@@ -1,0 +1,6 @@
+framework module SwiftCache {
+  umbrella header "SwiftCache-umbrella.h"
+
+  export *
+  module * { export * }
+}

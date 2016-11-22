@@ -1,0 +1,33 @@
+{
+  "name": "SwiftCache",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftCache.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SwiftCache",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tomas Radvansky": "tomas.radvansky@6pmplc.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SwiftCache.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SwiftCache/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 4.0"
+    ],
+    "RealmSwift": [
+
+    ],
+    "FCUUID": [
+
+    ]
+  }
+}
