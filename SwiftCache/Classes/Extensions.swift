@@ -8,14 +8,25 @@
 
 import Foundation
 
+//Simple example how to extend existing controls
+//to support SwiftCache library
 public extension UIImageView
 {
+    /**
+     Function to load image resource from remote source using SwiftCache
+     - parameters:
+        - url: Remote location
+        - placeholder: Optional UIImage placeholder
+     */
     func imageFromUrl(url:URL, placeholder:UIImage?) {
         self.image = placeholder
         SwiftCache.sharedInstance.loadResource(url: url, completionHandler: { (object:CachedObject?, error:NSError?) in
             if let error:NSError = error
             {
-                print(error)
+                if SwiftCache.sharedInstance.shouldDebug
+                {
+                    print(error)
+                }
             }
             else
             {

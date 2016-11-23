@@ -22,7 +22,7 @@ pod "SwiftCache"
 
 ## Author
 
-Tomas Radvansky, radvansky.tomas@gmail.com
+Tomas Radvansky
 
 ## License
 

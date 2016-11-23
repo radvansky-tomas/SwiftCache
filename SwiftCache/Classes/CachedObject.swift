@@ -8,16 +8,22 @@
 
 import Foundation
 import RealmSwift
-import Realm
 
+/**
+ Main entity for SwiftCache
+ */
 public class CachedObject: Object {
     public dynamic var MIMEType:String = ""
     public dynamic var url:String = ""
     public dynamic var data:NSData = NSData()
+    //Used for cache optimization
     public dynamic var timestamp:NSDate = NSDate()
     
+    /**
+     Optional method for RealmDB to setup primaryKeys within DB
+     - Returns: Primary key (property name)
+     */
     override public static func primaryKey() -> String? {
         return "url"
     }
-    
 }

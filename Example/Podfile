@@ -2,10 +2,11 @@ use_frameworks!
 
 target 'SwiftCache_Example' do
   pod 'SwiftCache', :path => '../'
+   	pod 'SwiftDate', '~> 4.0'
+	pod 'PullToRefresher', '~> 2.0'
+	pod 'MGSwipeTableCell'
 
   target 'SwiftCache_Tests' do
     inherit! :search_paths
-
-    
   end
 end

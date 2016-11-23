@@ -15,16 +15,6 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     var photos: [FlickrPhoto] = []
     
-    // MARK: - Actions
-    
-    @IBAction func resetSearch(sender: AnyObject) {
-        photos.removeAll(keepingCapacity: false);
-        searchBar.text = ""
-        searchBar.resignFirstResponder()
-        tableView.reloadData()
-        self.title = "Flickr Search"
-    }
-    
     // MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,7 +39,20 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
+        //Reenable Cancel button:
+        if let cancelBtn:UIButton = searchBar.value(forKey: "_cancelButton") as? UIButton
+        {
+            cancelBtn.isEnabled = true
+        }
         performSearchWithText(searchText: searchBar.text!)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        photos.removeAll(keepingCapacity: false);
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+        self.tableView.reloadSections(IndexSet.init(integer: 0), with: .automatic)
+        self.title = "Flickr Search"
     }
     
     // MARK - Segue
@@ -79,8 +82,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                 }
             }
             DispatchQueue.main.async(execute: { () -> Void in
-                self.title = searchText
-                self.tableView.reloadData()
+                self.tableView.reloadSections(IndexSet.init(integer: 0), with: .automatic)
             })
         })
     }

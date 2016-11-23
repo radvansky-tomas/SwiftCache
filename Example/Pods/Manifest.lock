@@ -2,6 +2,8 @@ PODS:
   - Alamofire (4.0.1)
   - FCUUID (1.3.1):
     - UICKeyChainStore (~> 2.1.0)
+  - MGSwipeTableCell (1.5.6)
+  - PullToRefresher (2.0.2)
   - Realm (2.0.3):
     - Realm/Headers (= 2.0.3)
   - Realm/Headers (2.0.3)
@@ -11,10 +13,14 @@ PODS:
     - Alamofire (~> 4.0)
     - FCUUID
     - RealmSwift
+  - SwiftDate (4.0.7)
   - UICKeyChainStore (2.1.0)
 
 DEPENDENCIES:
+  - MGSwipeTableCell
+  - PullToRefresher (~> 2.0)
   - SwiftCache (from `../`)
+  - SwiftDate (~> 4.0)
 
 EXTERNAL SOURCES:
   SwiftCache:
@@ -23,11 +29,14 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
+  MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
+  PullToRefresher: 5e101a8c3523e67ee0291375ba932ef59e0853c2
   Realm: 5f008bfe3c8c47142eddfc30b8c1584cde22db24
   RealmSwift: 5afb451f65b682242f272dbb52d5c6f6e343c980
-  SwiftCache: 47a388b0b539767dd8f4ad823d08ead4eec8132f
+  SwiftCache: e52c7829e521f2bb4c8a1909d7467ce4830b9dd3
+  SwiftDate: 0efb04a6751b1ab804049b2b09a69848cd304c12
   UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
 
-PODFILE CHECKSUM: 75e24a7e3c982185b01b74d1b63cecdace1cb2cb
+PODFILE CHECKSUM: 243d2fdf91d000e57c1322f51d81984f16e867e0
 
 COCOAPODS: 1.2.0.beta.1

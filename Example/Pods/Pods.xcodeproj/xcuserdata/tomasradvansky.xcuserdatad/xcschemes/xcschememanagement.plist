@@ -14,12 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MGSwipeTableCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SwiftCache_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-SwiftCache_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PullToRefresher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -39,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftDate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>UICKeyChainStore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,27 +62,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>07D643B2D008E9E51DDF3A4B39A9627E</key>
+		<key>16A80D351EB29096FAD0C41937FDBB9D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0ABCC9B7C532E0959A857A46AAE4854D</key>
+		<key>1CD80321715FDB12A3A31B7BCB09EA28</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2424FBF35627973DC63266CB2FF389BA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>384D4E1B4995B28E7A97A7D08EA72897</key>
+		<key>252CE09F55A1FACE2947EDF0A7B32F37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>61E7455F17F5C21D28EE854FEC462D19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D5B62728672536A34436A5652277A23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7910C0F6DDE1C12AC08B2B2289D3F61A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86975FC672CD2C72A42D45EA31C274E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -78,6 +103,11 @@
 			<true/>
 		</dict>
 		<key>9B0FD0A637E3D29D1D2154AE68B77457</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DB85254895F43E56E3BB88EEDF7C54D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

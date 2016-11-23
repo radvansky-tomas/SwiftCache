@@ -1,18 +1,18 @@
 {
   "name": "SwiftCache",
   "version": "0.1.0",
-  "summary": "A short description of SwiftCache.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SwiftCache",
+  "summary": "Basic caching library based on RealmDB",
+  "description": "Basic caching library based on RealmDB. It allows to cache any type of URL resource and\ncache them separately based on MIME type inside Non-SQL database.",
+  "homepage": "https://github.com/radvansky-tomas/SwiftCache",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Tomas Radvansky": "tomas.radvansky@6pmplc.com"
+    "Tomas Radvansky": "radvansky.tomas@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SwiftCache.git",
+    "git": "https://github.com/radvansky-tomas/SwiftCache.git",
     "tag": "0.1.0"
   },
   "platforms": {
