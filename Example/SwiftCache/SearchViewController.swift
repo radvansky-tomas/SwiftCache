@@ -7,13 +7,43 @@
 //
 
 import UIKit
+import PullToRefresh
+import SwiftCache
 
 class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchControllerDelegate, UISearchBarDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    let refresher = PullToRefresh()
     var photos: [FlickrPhoto] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableView.addPullToRefresh(refresher) {
+            if self.searchBar.text != nil
+            {
+                if self.searchBar.text!.characters.count > 0
+                {
+                    //This should empty cache:
+                    do
+                    {
+                        try SwiftCache.sharedInstance.clearCache(MIMEType: nil)
+                    }
+                    catch let error as NSError
+                    {
+                        print(error)
+                    }
+                    self.performSearchWithText(searchText: self.searchBar.text!)
+                }
+            }
+            self.tableView.endRefreshing(at: .top)
+        }
+    }
+    
+    deinit {
+        tableView.removePullToRefresh(tableView.topPullToRefresh!)
+    }
     
     // MARK: - UITableViewDataSource
     
